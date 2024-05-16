@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+}
+
+.wordColumn {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.wordColumn div {
+  width: fit-content;
+  display: flex;
+  margin: 0 2px;
+  text-align: center;
+}
+
+.wordColumn input {
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.submitBtn {
+  height: 50px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  background-color: #562135;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  border-color: #fcd1d7;
+}
+
+body {
+  background-color: #ffe7de;
+}
