@@ -1,6 +1,9 @@
 import './App.css';
 
-import { useState } from 'react';
+import {
+  useEffect,
+  useState,
+} from 'react';
 
 import Header from './components/Header';
 import WordAttempt from './components/WordAttempt';
@@ -14,6 +17,8 @@ function App() {
   const handleSubmit = (word) => {
     setActiveAttempt(activeAttempt+1);
     console.log(word);
+    setCanSubmit(false);
+    console.log(canSubmit);
   };
 
   const checkCanSubmit = (value) => {
@@ -23,6 +28,9 @@ function App() {
   const handleSetInputValues = (index, newValues) => {
     setInputValues(prev => prev.map((arr, i) => i === index ? newValues : arr));
   };
+
+  useEffect(() => {
+  }, []);
 
   return (
     <div className="App">
